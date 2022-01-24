@@ -1,0 +1,87 @@
+/*Font*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+/*Variables*/
+$primary-color: #fbeaec;
+$second-color: #2f3c7e;
+$font-color: #2f3c7e;
+$font: 'Roboto', sans-serif;
+*,
+::before,
+::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: $primary-color;
+    font-family: $font;
+    color: $font-color;
+    font-size: 0.9rem;
+}
+.grid-stack{
+    height: 100%;
+    .grid-stack-item-content {
+        color: white;
+        text-align: center;
+        background-color: $second-color;
+        border-radius: 10px;
+    }
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+}
+.header{
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid $second-color;
+    padding: 25px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+
+    .menu{
+        /*min-width: 386px;*/
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        font-weight: 400;
+    }
+}
+.btn {
+    position: relative;
+    width: 232px;
+    height: 64px;
+    line-height: 64px;
+    border: 0;
+    background: none;
+    color: $second-color;
+    font-weight: 400;
+    font-size: 1rem;
+    font-family: inherit;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin: 20px 10px;
+
+    span{
+        user-select: none;
+    }
+  }
+  
+.btn svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    z-index: -1;
+  }

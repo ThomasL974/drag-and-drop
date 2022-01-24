@@ -1,0 +1,108 @@
+/*Font*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
+/*Variables*/
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #fbeaec;
+  font-family: "Roboto", sans-serif;
+  color: #2f3c7e;
+  font-size: 0.9rem;
+}
+
+.grid-stack {
+  height: 100%;
+}
+
+.grid-stack .grid-stack-item-content {
+  color: white;
+  text-align: center;
+  background-color: #2f3c7e;
+  border-radius: 10px;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+}
+
+.header {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #2f3c7e;
+  padding: 25px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.header .menu {
+  /*min-width: 386px;*/
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-weight: 400;
+}
+
+.btn {
+  position: relative;
+  width: 232px;
+  height: 64px;
+  line-height: 64px;
+  border: 0;
+  background: none;
+  color: #2f3c7e;
+  font-weight: 400;
+  font-size: 1rem;
+  font-family: inherit;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px 10px;
+}
+
+.btn span {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.btn svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  z-index: -1;
+}
+/*# sourceMappingURL=style.css.map */

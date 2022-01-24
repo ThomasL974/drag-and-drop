@@ -1,0 +1,15 @@
+{
+  "name": "grid-draganddrop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "start": "nodemon server"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gridstack": "^5.0.0"
+  },
+  "type": "module"
+}
