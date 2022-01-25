@@ -68,6 +68,17 @@ body {
   font-weight: 400;
 }
 
+.container-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .btn {
   position: relative;
   width: 232px;
@@ -104,5 +115,9 @@ body {
   height: 100%;
   overflow: visible;
   z-index: -1;
+}
+
+.delete-btn {
+  color: #fbeaec;
 }
 /*# sourceMappingURL=style.css.map */

@@ -5,6 +5,7 @@ $primary-color: #fbeaec;
 $second-color: #2f3c7e;
 $font-color: #2f3c7e;
 $font: 'Roboto', sans-serif;
+$danger: #FE4F7E;
 *,
 ::before,
 ::after{
@@ -55,6 +56,11 @@ body{
         font-weight: 400;
     }
 }
+.container-btn{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 .btn {
     position: relative;
     width: 232px;
@@ -85,3 +91,7 @@ body{
     overflow: visible;
     z-index: -1;
   }
+
+.delete-btn{
+    color: $primary-color;
+}

@@ -5,7 +5,7 @@ import {
   } from "https://cdn.skypack.dev/@georgedoescode/generative-utils@1.0.1";
   import gsap from "https://cdn.skypack.dev/gsap@3.6.1";
   
-  const buttonPath = document.getElementById("btn-path");
+  const buttonPath = document.querySelectorAll("#btn-path");
   
   function createLiquidPath(path, options) {
     const svgPoints = pointsInPath(path, options.detail);
@@ -91,15 +91,17 @@ import {
   );
   
   if (prefersReducedMotionQuery && !prefersReducedMotionQuery.matches) {
-    createLiquidPath(buttonPath, {
-      detail: 32,
-      tension: 1,
-      close: true,
-      range: {
-        x: 12,
-        y: 40
-      },
-      axis: ["y"]
-    });
+    buttonPath.forEach(btn => {
+      createLiquidPath(btn, {
+        detail: 35,
+        tension: 1,
+        close: true,
+        range: {
+          x: 12,
+          y: 30
+        },
+        axis: ["y"]
+      });
+    })
   }
   
