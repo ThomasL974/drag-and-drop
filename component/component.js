@@ -1,4 +1,3 @@
-
 /*Parent*/
 let container = document.querySelector('.container');
 /*Menu header*/
@@ -27,8 +26,8 @@ card.innerHTML = `
 </div>
 `;*/
 
+/* Button */
 let containerBtn = document.querySelector('.container-btn');
-let node = {};
 /* Button add */
 let addButton = document.createElement('div');
 addButton.classList.add('btn');
@@ -39,14 +38,12 @@ addButton.innerHTML=`
     <span>ADD BOX</span>
 `;
 addButton.addEventListener('click', () =>{
-        node = {
+        let node = {
           w: Math.round(1 + 3 * Math.random()),
         };
         grid.addWidget(node);
 })
 containerBtn.appendChild(addButton);
-
-
 /* Button delete */
 let deleteButton = document.createElement('div');
 deleteButton.classList.add('btn');
@@ -59,7 +56,6 @@ deleteButton.innerHTML=`
     <span class="delete-btn">DELETE BOX</span>
 `;
 containerBtn.appendChild(deleteButton);
-
 /* Button clear */
 let clearButton = document.createElement('div');
 clearButton.classList.add('btn');
@@ -71,6 +67,18 @@ clearButton.innerHTML=`
     <span class="delete-btn">CLEAR GRID</span>
 `;
 clearButton.addEventListener('click', () =>{
-    
+    grid.removeAll();
 });
 containerBtn.appendChild(clearButton);
+
+/***************Grid configuration *********************/
+let options = { 
+    cellHeight: 100,
+    cellWidth: 50,
+    disableOneColumnMode: true,
+    removable: '.trash'
+};
+
+let grid = GridStack.init(options);
+/*******************************************************/
+
